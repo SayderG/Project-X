@@ -1,0 +1,9 @@
+aiogram
+aioredis
+environs
+Redis
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+pydantic
