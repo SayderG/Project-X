@@ -2,7 +2,7 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException, status
 from Database.base import AsyncDatabase
 from Database.repositories.ApartmentsRepository import ApartmentsRepository
-from FastAPI.schemas.ApartmentsSchema import ApartmentsOut, ApartmentsIn
+from FastAPI.schemas.ApartmentsSchema import ApartmentsOut, ApartmentsIn, HouseIn, HouseOut
 
 router = APIRouter()
 
@@ -29,6 +29,14 @@ async def get_apartments_by_user_id(user_id: int, session=Depends(AsyncDatabase.
     return [apartment for apartment in apartments]
 
 
+@router.delete('/{apartment_id}', response_model=ApartmentsOut, name='Delete apartment by id')
+async def delete_apartment_by_id(apartment_id: int, session=Depends(AsyncDatabase.get_session)):
+    apartment = await ApartmentsRepository(session).delete(apartment_id)
+    if not apartment:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='Apartment not found')
+    return apartment
+
+
 @router.post('/', name='Create apartment', response_model=ApartmentsOut)
 async def create_apartment(apartment: ApartmentsIn, session=Depends(AsyncDatabase.get_session)):
     apartment = await ApartmentsRepository(session).create(apartment.__dict__)
@@ -38,9 +46,9 @@ async def create_apartment(apartment: ApartmentsIn, session=Depends(AsyncDatabas
     return apartment
 
 
-@router.delete('/{apartment_id}', response_model=ApartmentsOut, name='Delete apartment by id')
-async def delete_apartment_by_id(apartment_id: int, session=Depends(AsyncDatabase.get_session)):
-    apartment = await ApartmentsRepository(session).delete(apartment_id)
-    if not apartment:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='Apartment not found')
-    return apartment
+@router.post('/house', name='Create house', response_model=HouseOut)
+async def create_apartment(house: HouseIn, session=Depends(AsyncDatabase.get_session)):
+    house = await ApartmentsRepository(session).create_house(house.__dict__)
+    if not house:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='house not created')
+    return house

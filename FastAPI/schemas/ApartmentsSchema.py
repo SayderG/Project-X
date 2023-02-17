@@ -1,8 +1,26 @@
 from pydantic import BaseModel, validator
 
 
+# House Schema
+class House(BaseModel):
+    address: str
+
+
+class HouseIn(House):
+    pass
+
+
+class HouseOut(House):
+    id: int
+
+    class Config:
+        orm_mode = True
+
+
+# Apartment Schema
 class Apartments(BaseModel):
     owner_id: int
+    house_id: int
     number: int
     floor: int
     area: int
@@ -38,6 +56,7 @@ class ApartmentsOut(Apartments):
 
     class Config:
         orm_mode = True
+
 
 class ApartmentsIn(Apartments):
     pass
