@@ -1,0 +1,30 @@
+body {
+  background-color: #F3F3F3;
+  padding: 0;
+  margin: 0;
+  font-family: 'TT Firs Neue';
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+.bottomNavigation {
+  background: #FFFFFF;
+  /* тень */
+
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  left: 16px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.selectedItem {
+  filter: drop-shadow(0px 0px 13.6364px rgba(66, 133, 244, 0.4));
+}
