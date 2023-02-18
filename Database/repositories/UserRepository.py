@@ -1,9 +1,7 @@
-from sqlalchemy.orm import selectinload, query
+from sqlalchemy.orm import selectinload
 from Database.models.users import Users, Telegrams, Profiles
 from Database.repositories.BaseRepository import BaseRepository
 from sqlalchemy import select
-from Database.base import AsyncDatabase
-import asyncio
 
 
 class UsersRepository(BaseRepository):
@@ -26,10 +24,12 @@ class UsersRepository(BaseRepository):
         return user
 
     async def all_full(self, limit, skip) -> list[Users]:
-        result = await self.session.execute(select(Users)
-                                            .options(selectinload(Users.telegram), selectinload(Users.profile))
-                                            .offset(skip)
-                                            .limit(limit))
+        query = select(Users).options(selectinload(Users.telegram), selectinload(Users.profile))
+        if skip:
+            query = query.offset(skip)
+        if limit:
+            query = query.limit(limit)
+        result = await self.session.execute(query)
         return result.scalars().all()
 
     async def full_by_id(self, user_id: int) -> Users | None:

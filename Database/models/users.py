@@ -13,7 +13,6 @@ class Users(Base):
     telegram = relationship("Telegrams", backref=backref("owner", uselist=False), lazy=True)
     profile = relationship("Profiles", backref=backref("owner", uselist=False), lazy=True)
 
-
 class Telegrams(Base):
     __tablename__ = "Telegrams"
 
