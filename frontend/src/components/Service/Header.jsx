@@ -1,15 +1,28 @@
 import React from "react";
 import './Header.css'
 import chevron from '../../assets/chevron_left.svg'
+import { useDispatch } from "react-redux";
+import { setScreen } from '../../store/appStore'
 
-export default function Header() {
+export default function Header({text, isMain, onClick}) {
+  const dispatch = useDispatch()
   return (
     <div className="services__header__container">
-      <div className="services__header__chevron">
-        <img src={chevron} alt="chevron" />
-      </div>
+      {
+        !isMain && (
+          <div className="services__header__chevron" onClick={() => {
+            if (onClick) {
+              onClick()
+            } else {
+              dispatch(setScreen(0))
+            }
+          }}>
+            <img src={chevron} alt="chevron" />
+          </div>
+        )
+      }
       <div className="services__header__text">
-      Услуга
+      {text}
       </div>
     </div>
   )

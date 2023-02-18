@@ -1,10 +1,12 @@
 import './Screen.css'
-import Header from '../components/Service/Header'
+import Services from '../components/Services/Services';
+import Header from '../components/Service/Header';
 
-export default function Home() {
+export default function ServicesScreen() {
   return (
     <div className="screen">
-      <Header/>
+      <Header text={"Услуги"} isMain={true}/>
+      <Services/>
     </div>
   );
 }

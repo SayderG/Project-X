@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  height: 40px;
 }
 
 .services__header__text {
@@ -15,4 +16,8 @@
 
   text-align: center;
   letter-spacing: -0.333333px;
+}
+
+.services__header__text:first-child {
+  margin-left: 20px;
 }

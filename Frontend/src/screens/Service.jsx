@@ -1,22 +1,26 @@
 import './Screen.css'
 import Header from '../components/Service/Header'
-import Service from '../components/Service/Service';
+import ServiceUnit from '../components/Service/ServiceUnit';
+import { useDispatch } from "react-redux";
+import { setScreen } from '../store/appStore'
 
 export default function Home() {
+  const dispatch = useDispatch()
   const service = {
-    name: "Service Name",
+    title: "Клининг",
     companies: [
-      "Company 1",
-      "Company 2",
-      "Company 3",
-      "Company 4",
-    ],
-
+      "Бабайка",
+      "Экспресс",
+      "Домашний",
+      "Добрый",
+    ]
   }
   return (
     <div className="screen">
-      <Header/>
-      <Service service={service}/>
+      <Header text={"Услуга"} onClick={() => dispatch(setScreen(2))}/>
+      <ServiceUnit
+        service={service}
+      />
     </div>
   );
 }

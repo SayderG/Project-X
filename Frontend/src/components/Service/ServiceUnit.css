@@ -1,0 +1,130 @@
+.serviceunit__container {
+  background: #FFFFFF;
+  /* обычная тень */
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 12px 20px;
+}
+
+.serviceunit__title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 24px;
+  margin-top: 16px;
+
+}
+
+.serviceunit__select {
+  /* Shades/White */
+  background: #FFFFFF;
+  /* Neutral / 100 */
+  border: 2px solid #E7EAEE;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 12px;
+  margin: 0 24px;
+}
+
+/* убрать ублюдскую обводку у селекта */
+.serviceunit__select:focus {
+  outline: none;
+}
+
+
+.selectdayunit__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 24px;
+  font-weight: 400;
+  font-size: 16px;
+  gap: 12px
+}
+
+.selectdayunit__bottom {
+  font-weight: 200;
+  font-size: 14px;
+  color: #64748B;
+}
+
+.selectdayunit__days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.selectdayunit__day {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #4285F4;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.selected {
+  background: #4285F4;
+  color: #FFFFFF;
+}
+
+.serviceunit__description__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.serviceunit__description__remindme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 24px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.serviceunit__description__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 24px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.remindme__select {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+  color: #4285F4;
+  border: 0;
+  background: none;
+}
+
+.remindme__select:focus {
+  outline: none;
+}
+
+.serviceunit__add {
+  background: #4285F4;
+  border-radius: 20px;
+  color: #FFFFFF;
+  height: 45px;
+  margin: 0 24px;
+  box-shadow: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
