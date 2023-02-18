@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 from starlette.middleware.cors import CORSMiddleware
-from FastAPI.endpoints import users, services, complaints, apartments, discussions, voting
+from FastAPI.endpoints import users, services, complaints, apartments, discussions, voting, stories
 from Database.base import AsyncDatabase
 
 app = FastAPI()
@@ -19,6 +19,7 @@ app.include_router(complaints.router, tags=['Complaints'], prefix='/complaints')
 app.include_router(apartments.router, tags=['Apartments'], prefix='/apartments')
 app.include_router(discussions.router, tags=['Discussions'], prefix='/discussions')
 app.include_router(voting.router, tags=['Voting'], prefix='/vote')
+app.include_router(stories.router, tags=['Stories'], prefix='/stories')
 
 
 @app.get('/', name='Root')

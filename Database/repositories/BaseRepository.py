@@ -10,7 +10,7 @@ class BaseRepository:
         self.session: AsyncSession = session
 
     async def all(self, limit: int = 0, skip: int = 0):
-        query = select(self.model).limit(limit).offset(skip)
+        query = select(self.model)
         if skip:
             query = query.offset(skip)
         if limit:

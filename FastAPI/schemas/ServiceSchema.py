@@ -4,6 +4,7 @@ from pydantic import BaseModel, validator
 
 
 class Service(BaseModel):
+    firms: list[str]
     title: str
     description: str
     price: int

@@ -12,8 +12,6 @@ class Users(Base):
 
     telegram = relationship("Telegrams", backref=backref("owner", uselist=False), lazy=True)
     profile = relationship("Profiles", backref=backref("owner", uselist=False), lazy=True)
-    # services = relationship("Service_customers", back_populates="customer", uselist=True, lazy=True)
-
 
 class Telegrams(Base):
     __tablename__ = "Telegrams"
