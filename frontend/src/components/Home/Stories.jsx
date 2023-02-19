@@ -99,7 +99,6 @@ export default function Stories() {
     },
   ]);
   const [currentStory, setCurrentStory] = useState(null);
-  
   return (
     <div className="stories__container">
       {

@@ -29,7 +29,6 @@ class Apartments(Base):
 
     house = relationship("Houses", back_populates="apartments", uselist=False, lazy=True)
 
-
 class Apartment_owners(Base):
     __tablename__ = 'Apartment_owners'
 

@@ -1,6 +1,5 @@
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import selectinload
-
 from Database.models.apartments import Apartments, Houses, Apartment_owners
 from Database.repositories.BaseRepository import BaseRepository
 from sqlalchemy import select
