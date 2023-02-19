@@ -1,0 +1,46 @@
+.discussions__inner {
+  position: absolute;
+  margin-top: 45%;
+  color: white;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discussions__container {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+
+}
+
+.discussions__reactions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  margin-left: 2vw;
+}
+
+.discussions__title {
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.discussions__like {
+  background: #4CE465;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 21px;
+  padding: 10px 20px;
+}
+
+.discussions__dislike {
+  background: #F52C2C;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 21px;
+  padding: 10px 20px;
+}

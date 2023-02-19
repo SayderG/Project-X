@@ -3,33 +3,7 @@ import "./Service.css";
 import './ServiceUnit.css'
 
 
-function SelectDayUnit() {
-  const [selectedDay, setSelectedDay] = React.useState(0);
-  const days = [
-    "Пн",
-    "Вт",
-    "Ср",
-    "Чт",
-    "Пт",
-    "Сб",
-    "Вс",
-  ]
-  return (
-    <div className="selectdayunit__container">
-      <div className="selectdayunit__top">Выберите дни недели в которые мы будем наводить порядок у вас дома:</div>
-      <div className="selectdayunit__days">
-        {
-          days.map((day, index) => {
-            return (
-              <div key={index} className={`selectdayunit__day ${selectedDay === index ? "selected" : ""}`} onClick={() => setSelectedDay(index)}>{day}</div>
-            )
-          })
-        }
-      </div>
-      <div className="selectdayunit__bottom">Мы рекомендуем убираться хотя бы 1 раз в неделю</div>
-    </div>
-  );
-}
+
 
 export default function ServiceUnit({service}) {
   const [selectedCompany, setSelectedCompany] = React.useState(0);
@@ -45,7 +19,10 @@ export default function ServiceUnit({service}) {
           })
         }
       </select>
-      <SelectDayUnit/>
+      <SelectDayUnit
+        description={service.description}
+        tip={service.tip}
+      />
       <hr style={{
         border: "1px solid #E7EAEE",
         width: "80%",
@@ -76,7 +53,7 @@ export default function ServiceUnit({service}) {
             Цена
           </div>
           <div className="price__right">
-            1000 руб.
+            {service.price} руб.
           </div>
         </div>
       </div>

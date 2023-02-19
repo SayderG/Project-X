@@ -18,6 +18,7 @@ lib/
 lib64/
 parts/
 sdist/
+frontend/node_modules/
 var/
 wheels/
 pip-wheel-metadata/

@@ -1,0 +1,13 @@
+.profile__screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 12px;
+}
+
+.promo__after {
+  margin-left: 10%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}

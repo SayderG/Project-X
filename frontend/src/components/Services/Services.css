@@ -22,3 +22,12 @@
   flex-direction: row;
   gap: 14px;
 }
+
+.middle__tile {
+  height: 95px;
+  background-size: cover !important;
+  border-radius: 20px;
+  width: 326px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}

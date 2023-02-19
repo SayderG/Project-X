@@ -1,0 +1,209 @@
+Date : 2023-02-19 02:35:11
+Directory : /Users/daniilrakityansky/Documents/Project-X
+Total : 139 files,  4899 codes, 83 comments, 621 blanks, all 5603 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| JSON             |          2 |      1,314 |          0 |          2 |      1,316 |
+| CSS              |         23 |      1,119 |         14 |        140 |      1,273 |
+| JavaScript JSX   |         24 |      1,078 |          0 |         52 |      1,130 |
+| Python           |         52 |        955 |         21 |        353 |      1,329 |
+| XML              |         25 |        200 |          0 |         24 |        224 |
+| JavaScript       |          7 |        159 |         31 |         37 |        227 |
+| YAML             |          1 |         35 |         11 |          3 |         49 |
+| Docker           |          1 |         14 |          6 |          7 |         27 |
+| HTML             |          1 |         13 |          0 |          1 |         14 |
+| pip requirements |          1 |          9 |          0 |          0 |          9 |
+| Markdown         |          1 |          2 |          0 |          1 |          3 |
+| Ignore           |          1 |          1 |          0 |          1 |          2 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                              | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                 |        139 |      4,899 |         83 |        621 |      5,603 |
+| . (Files)                                                                                         |          7 |        133 |         18 |         36 |        187 |
+| Bot                                                                                               |         16 |         85 |          1 |         43 |        129 |
+| Bot (Files)                                                                                       |          2 |         45 |          0 |         15 |         60 |
+| Bot/filters                                                                                       |          2 |         12 |          0 |          8 |         20 |
+| Bot/handlers                                                                                      |          2 |         20 |          1 |          6 |         27 |
+| Bot/keyboards                                                                                     |          5 |          0 |          0 |          5 |          5 |
+| Bot/keyboards (Files)                                                                             |          1 |          0 |          0 |          1 |          1 |
+| Bot/keyboards/inline                                                                              |          2 |          0 |          0 |          2 |          2 |
+| Bot/keyboards/reply                                                                               |          2 |          0 |          0 |          2 |          2 |
+| Bot/middlewares                                                                                   |          2 |          8 |          0 |          6 |         14 |
+| Bot/misc                                                                                          |          2 |          0 |          0 |          2 |          2 |
+| Bot/services                                                                                      |          1 |          0 |          0 |          1 |          1 |
+| Database                                                                                          |         17 |        329 |         15 |        108 |        452 |
+| Database (Files)                                                                                  |          2 |         27 |          0 |         10 |         37 |
+| Database/models                                                                                   |          7 |        118 |          0 |         50 |        168 |
+| Database/repositories                                                                             |          8 |        184 |         15 |         48 |        247 |
+| FastAPI                                                                                           |         17 |        469 |          4 |        178 |        651 |
+| FastAPI (Files)                                                                                   |          1 |          0 |          0 |          1 |          1 |
+| FastAPI/endpoints                                                                                 |          8 |        233 |          0 |         80 |        313 |
+| FastAPI/schemas                                                                                   |          8 |        236 |          4 |         97 |        337 |
+| frontend                                                                                          |         82 |      3,883 |         45 |        256 |      4,184 |
+| frontend (Files)                                                                                  |          4 |      1,332 |          1 |          5 |      1,338 |
+| frontend/src                                                                                      |         78 |      2,551 |         44 |        251 |      2,846 |
+| frontend/src (Files)                                                                              |          4 |        164 |         28 |         29 |        221 |
+| frontend/src/API                                                                                  |          2 |         55 |          1 |          8 |         64 |
+| frontend/src/assets                                                                               |         26 |        398 |          0 |         43 |        441 |
+| frontend/src/assets (Files)                                                                       |         25 |        200 |          0 |         24 |        224 |
+| frontend/src/assets/fonts                                                                         |          1 |        198 |          0 |         19 |        217 |
+| frontend/src/components                                                                           |         36 |      1,597 |          8 |        140 |      1,745 |
+| frontend/src/components/Home                                                                      |         19 |        855 |          2 |         79 |        936 |
+| frontend/src/components/Profile                                                                   |          8 |        260 |          0 |         23 |        283 |
+| frontend/src/components/Service                                                                   |          5 |        217 |          6 |         25 |        248 |
+| frontend/src/components/Services                                                                  |          4 |        265 |          0 |         13 |        278 |
+| frontend/src/screens                                                                              |          7 |        290 |          5 |         23 |        318 |
+| frontend/src/store                                                                                |          3 |         47 |          2 |          8 |         57 |
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                          | language         | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| /Users/daniilrakityansky/Documents/Project-X/.dockerignore                                        | Ignore           |          1 |          0 |          1 |          2 |
+| /Users/daniilrakityansky/Documents/Project-X/API.py                                               | Python           |         29 |          0 |          9 |         38 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/__init__.py                                      | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/config.py                                        | Python           |         45 |          0 |         14 |         59 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/filters/__init__.py                              | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/filters/admin.py                                 | Python           |         12 |          0 |          7 |         19 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/handlers/__init__.py                             | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/handlers/starting.py                             | Python           |         20 |          1 |          5 |         26 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/keyboards/__init__.py                            | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/keyboards/inline/__init__.py                     | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/keyboards/inline/inline.py                       | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/keyboards/reply/__init__.py                      | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/keyboards/reply/reply.py                         | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/middlewares/__init__.py                          | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/middlewares/environment.py                       | Python           |          8 |          0 |          5 |         13 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/misc/__init__.py                                 | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/misc/states.py                                   | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Bot/services/__init__.py                             | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/__init__.py                                 | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/base.py                                     | Python           |         27 |          0 |          9 |         36 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/models/__init__.py                          | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/models/apartments.py                        | Python           |         29 |          0 |         13 |         42 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/models/complaints.py                        | Python           |         13 |          0 |          5 |         18 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/models/discussions.py                       | Python           |         20 |          0 |          9 |         29 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/models/services.py                          | Python           |         21 |          0 |          8 |         29 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/models/stories.py                           | Python           |         11 |          0 |          4 |         15 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/models/users.py                             | Python           |         24 |          0 |         10 |         34 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/ApartmentsRepository.py        | Python           |         35 |          0 |          9 |         44 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/BaseRepository.py              | Python           |         33 |          0 |          8 |         41 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/ComplaintsRepository.py        | Python           |          8 |          0 |          4 |         12 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/DiscussionsRepository.py       | Python           |         19 |         15 |          6 |         40 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/ServiceRepository.py           | Python           |         38 |          0 |          8 |         46 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/StoriesRepository.py           | Python           |         13 |          0 |          4 |         17 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/UserRepository.py              | Python           |         38 |          0 |          8 |         46 |
+| /Users/daniilrakityansky/Documents/Project-X/Database/repositories/__init__.py                    | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/Dockerfile                                           | Docker           |         14 |          6 |          7 |         27 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/__init__.py                                  | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/__init__.py                        | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/apartments.py                      | Python           |         58 |          0 |         20 |         78 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/complaints.py                      | Python           |         34 |          0 |          8 |         42 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/discussions.py                     | Python           |         30 |          0 |         10 |         40 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/services.py                        | Python           |         43 |          0 |         14 |         57 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/stories.py                         | Python           |         24 |          0 |          9 |         33 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/users.py                           | Python           |         26 |          0 |         11 |         37 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/endpoints/voting.py                          | Python           |         18 |          0 |          7 |         25 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/ApartmentsSchema.py                  | Python           |         70 |          3 |         27 |        100 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/ComplaintsSchema.py                  | Python           |         19 |          0 |          9 |         28 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/DiscussionSchema.py                  | Python           |         19 |          0 |         10 |         29 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/ServiceSchema.py                     | Python           |         47 |          0 |         13 |         60 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/StoriesSchema.py                     | Python           |         19 |          1 |          8 |         28 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/UserSchema.py                        | Python           |         42 |          0 |         18 |         60 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/VotingSchema.py                      | Python           |         20 |          0 |         11 |         31 |
+| /Users/daniilrakityansky/Documents/Project-X/FastAPI/schemas/__init__.py                          | Python           |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/README.md                                            | Markdown         |          2 |          0 |          1 |          3 |
+| /Users/daniilrakityansky/Documents/Project-X/bot.py                                               | Python           |         43 |          1 |         15 |         59 |
+| /Users/daniilrakityansky/Documents/Project-X/docker-compose.yml                                   | YAML             |         35 |         11 |          3 |         49 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/index.html                                  | HTML             |         13 |          0 |          1 |         14 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/package-lock.json                           | JSON             |      1,290 |          0 |          1 |      1,291 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/package.json                                | JSON             |         24 |          0 |          1 |         25 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/API/API.js                              | JavaScript       |          5 |          0 |          2 |          7 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/API/Stories.js                          | JavaScript       |         50 |          1 |          6 |         57 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/App.css                                 | CSS              |         26 |          1 |          3 |         30 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/App.jsx                                 | JavaScript JSX   |         74 |          0 |          5 |         79 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/arrow.svg                        | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/arrow_black.svg                  | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/box_tile.svg                     | XML              |          9 |          0 |          1 |         10 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/bubbles.svg                      | XML              |          4 |          0 |          1 |          5 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/chevron.svg                      | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/chevron_left.svg                 | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/clean_tile.svg                   | XML              |          7 |          0 |          1 |          8 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/close.svg                        | XML              |          5 |          0 |          1 |          6 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/coins.svg                        | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/fonts/stylesheet.css             | CSS              |        198 |          0 |         19 |        217 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/fork.svg                         | XML              |          6 |          0 |          1 |          7 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/home_nav.svg                     | XML              |         22 |          0 |          1 |         23 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/liked.svg                        | XML              |          4 |          0 |          1 |          5 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/mdi_calendar.svg                 | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/msg_nav.svg                      | XML              |         10 |          0 |          1 |         11 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/nei.svg                          | XML              |         45 |          0 |          1 |         46 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/paw.svg                          | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/pc_mock.svg                      | XML              |         42 |          0 |          1 |         43 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/pets_tile.svg                    | XML              |          4 |          0 |          1 |          5 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/place.svg                        | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/react.svg                        | XML              |          1 |          0 |          0 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/services_nav.svg                 | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/sm_arrow.svg                     | XML              |          4 |          0 |          1 |          5 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/spark.svg                        | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/unliked.svg                      | XML              |          4 |          0 |          1 |          5 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/assets/user_nav.svg                     | XML              |          3 |          0 |          1 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Bills.css               | CSS              |         59 |          0 |          8 |         67 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Bills.jsx               | JavaScript JSX   |         59 |          0 |          2 |         61 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Buildings.css           | CSS              |         38 |          1 |          4 |         43 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Buildings.jsx           | JavaScript JSX   |         39 |          0 |          2 |         41 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Buttons.css             | CSS              |         31 |          0 |          2 |         33 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Buttons.jsx             | JavaScript JSX   |         22 |          0 |          3 |         25 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Discussions.jsx         | JavaScript JSX   |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Header.css              | CSS              |         29 |          1 |          4 |         34 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Header.jsx              | JavaScript JSX   |         23 |          0 |          1 |         24 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/HomeInfo.css            | CSS              |        117 |          0 |         14 |        131 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/HomeInfo.jsx            | JavaScript JSX   |         65 |          0 |          4 |         69 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Neighbours.css          | CSS              |         40 |          0 |          4 |         44 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Neighbours.jsx          | JavaScript JSX   |         24 |          0 |          1 |         25 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Services.css            | CSS              |         53 |          0 |          9 |         62 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Services.jsx            | JavaScript JSX   |         39 |          0 |          2 |         41 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Stories.css             | CSS              |         80 |          0 |         10 |         90 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/Stories.jsx             | JavaScript JSX   |        114 |          0 |          6 |        120 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/TextPill.css            | CSS              |         12 |          0 |          1 |         13 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Home/TextPill.jsx            | JavaScript JSX   |         11 |          0 |          1 |         12 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/Accounting.css       | CSS              |         34 |          0 |          5 |         39 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/Accounting.jsx       | JavaScript JSX   |         18 |          0 |          1 |         19 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/InfoContainer.css    | CSS              |         46 |          0 |          7 |         53 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/InfoContainer.jsx    | JavaScript JSX   |         35 |          0 |          3 |         38 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/PowerConsumption.css | CSS              |         27 |          0 |          4 |         31 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/PowerConsumtion.jsx  | JavaScript JSX   |         60 |          0 |          1 |         61 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/Promo.css            | CSS              |         16 |          0 |          1 |         17 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Profile/Promo.jsx            | JavaScript JSX   |         24 |          0 |          1 |         25 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Service/Header.css           | CSS              |         19 |          1 |          3 |         23 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Service/Header.jsx           | JavaScript JSX   |         28 |          0 |          1 |         29 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Service/Service.css          | CSS              |          0 |          0 |          1 |          1 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Service/ServiceUnit.css      | CSS              |        109 |          5 |         16 |        130 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Service/ServiceUnit.jsx      | JavaScript JSX   |         61 |          0 |          4 |         65 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Services/Services.css        | CSS              |         29 |          0 |          4 |         33 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Services/Services.jsx        | JavaScript JSX   |        169 |          0 |          2 |        171 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Services/Tiles.css           | CSS              |         32 |          0 |          4 |         36 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/components/Services/Tiles.jsx           | JavaScript JSX   |         35 |          0 |          3 |         38 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/main.jsx                                | JavaScript JSX   |         12 |          0 |          2 |         14 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/neuroset.js                             | JavaScript       |         52 |         27 |         19 |         98 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/screens/Home.jsx                        | JavaScript JSX   |         28 |          0 |          1 |         29 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/screens/Profile.css                     | CSS              |         12 |          0 |          1 |         13 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/screens/Profile.jsx                     | JavaScript JSX   |         27 |          0 |          0 |         27 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/screens/Screen.css                      | CSS              |          4 |          0 |          0 |          4 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/screens/Service.css                     | CSS              |        108 |          5 |         16 |        129 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/screens/Service.jsx                     | JavaScript JSX   |        100 |          0 |          4 |        104 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/screens/Services.jsx                    | JavaScript JSX   |         11 |          0 |          1 |         12 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/store/appStore.js                       | JavaScript       |         15 |          1 |          4 |         20 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/store/serviceStore.js                   | JavaScript       |         23 |          1 |          4 |         28 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/src/store/store.js                          | JavaScript       |          9 |          0 |          0 |          9 |
+| /Users/daniilrakityansky/Documents/Project-X/frontend/vite.config.js                              | JavaScript       |          5 |          1 |          2 |          8 |
+| /Users/daniilrakityansky/Documents/Project-X/requirements.txt                                     | pip requirements |          9 |          0 |          0 |          9 |
+| Total                                                                                             |                  |      4,899 |         83 |        621 |      5,603 |
++---------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

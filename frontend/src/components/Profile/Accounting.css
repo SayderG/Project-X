@@ -1,0 +1,39 @@
+.accounting__container {
+  background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 16px;
+
+}
+
+.accounting__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 14px;
+  padding-left: 20px;
+}
+
+.accounting__bottom {
+  color: #C1C1C1;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.accounting__top {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.accounting__button {
+  background: rgba(193, 193, 193, 0.2);
+  border-radius: 10px;
+  padding: 12px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}

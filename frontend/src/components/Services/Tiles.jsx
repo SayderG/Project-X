@@ -13,21 +13,25 @@ export function SquareTile({title, bg, onClick}) {
   );
 }
 
-export function BigHorizontalTile({title, bg}) {
+export function BigHorizontalTile({title, bg, onClick}) {
   return (
     <div className="tile__container__horizontal" style={{
       background: `url(${bg})`,
-    }}>
+    }}
+    onClick={onClick}
+    >
       <div className="tile__title__horizontal">{title}</div>
     </div>
   );
 }
 
-export function MediumHorizontalTile({title, bg}) {
+export function MediumHorizontalTile({title, bg, onClick}) {
   return (
     <div className="tile__medium" style={{
       background: `url(${bg})`,
-    }}>
+    }}
+    onClick={onClick}
+    >
       <div className="tile__title__horizontal">{title}</div>
     </div>
   );

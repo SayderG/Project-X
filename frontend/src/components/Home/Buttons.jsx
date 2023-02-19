@@ -13,7 +13,7 @@ function BigButton({ text, onClick }) {
 
 function SmallButton({ text, onClick }) {
   return(
-    <button className="smallButton">
+    <button className="smallButton" onClick={onClick}>
       {text} <img src={smArrow} alt="arrow"/>
     </button>
   )

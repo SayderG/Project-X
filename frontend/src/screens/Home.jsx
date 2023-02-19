@@ -9,11 +9,12 @@ import Services from "../components/Home/Services";
 import Stories from "../components/Home/Stories";
 import TextPill from "../components/Home/TextPill";
 import "./Screen.css";
+import Disccussions from "../components/Home/Discussions";
 
 export default function Home() {
   return (
     <div className="screen">
-      <Header/>
+      <Header />
       <Stories/>
       <HomeInfo/>
       <Bills/>
@@ -23,6 +24,8 @@ export default function Home() {
       <Neighbours/>
       <TextPill text="Подходящие вам новостройки"/>
       <Buildings/>
+      <TextPill text="Обсуждения"/>
+      <Disccussions/>
     </div>
   );
 }
