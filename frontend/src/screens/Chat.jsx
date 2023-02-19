@@ -36,7 +36,7 @@ export default function Chat() {
       id: 1,
       text: "Чьи строители варят плов на лестнице между 5 и 6 ?",
       date: "12:00",
-      isMy: true,
+      isMy: false,
       avatar: img
     },
     {

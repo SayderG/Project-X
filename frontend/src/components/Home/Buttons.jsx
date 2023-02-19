@@ -5,7 +5,7 @@ import smArrow from "../../assets/sm_arrow.svg";
 
 function BigButton({ text, onClick }) {
   return(
-    <button className="bigButton">
+    <button className="bigButton" onClick={onClick}>
       {text} <img src={arrow} alt="arrow"/>
     </button>
   )

@@ -10,29 +10,30 @@ import Profile from './screens/Profile'
 import Chat from './screens/Chat'
 import {Route, Routes, useLocation} from "react-router";
 import { useNavigate } from "react-router-dom";
+import Parking from './screens/Parking'
+import { CSSTransition, SwitchTransition, TransitionGroup } from 'react-transition-group'
 
 function App() {
   const currentScreen = useSelector(state => state.appStore.currentScreen)
   const dispatch = useDispatch()
   const location = useLocation();
   const navigate = useNavigate();
-  const screens = [
-    <Home/>,
-    <Service/>,
-    <Services/>,
-    <Profile/>,
-    <Chat/>
-  ]
   return (
     <div className="App">
       {
-        <Routes>
-          <Route element={<Home />} path="/" />
-          <Route element={<Service />} path="/service" />
-          <Route element={<Services />} path="/services" />
-          <Route element={<Profile />} path="/profile" />
-          <Route element={<Chat />} path="/chat" />
-        </Routes>
+        <TransitionGroup component={null}>
+          <CSSTransition key={location.key} classNames="fade" timeout={300}>
+            <Routes>  
+              <Route element={<Home />} path="/" />
+              <Route element={<Service />} path="/service" />
+              <Route element={<Services />} path="/services" />
+              <Route element={<Profile />} path="/profile" />
+              <Route element={<Chat />} path="/chat" />
+              <Route element={<Parking/>} path="/parking" />
+            </Routes>
+          </CSSTransition>
+        </TransitionGroup>
+
       }
       <div className={`bottomNavigation ${(location.pathname === '/chat') ? 'hide' : ''}`}>
         <svg 

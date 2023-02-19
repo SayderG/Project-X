@@ -30,16 +30,16 @@
 }
 
 .discussions__like {
-  background: #4CE465;
-  border-radius: 9px;
+  background: rgba(0, 255, 0, 0.6);
+  border-radius: 80px;
   font-weight: 600;
   font-size: 21px;
   padding: 10px 20px;
 }
 
 .discussions__dislike {
-  background: #F52C2C;
-  border-radius: 9px;
+  background: rgba(255, 0, 0, 0.6);
+  border-radius: 80px;
   font-weight: 600;
   font-size: 21px;
   padding: 10px 20px;

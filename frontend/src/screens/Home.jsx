@@ -10,15 +10,17 @@ import Stories from "../components/Home/Stories";
 import TextPill from "../components/Home/TextPill";
 import "./Screen.css";
 import Disccussions from "../components/Home/Discussions";
+import { useNavigate } from "react-router";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className="screen">
       <Header />
       <Stories/>
       <HomeInfo/>
       <Bills/>
-      <BigButton text="Парковочные места"/>
+      <BigButton text="Парковочные места" onClick={() => navigate('/parking')}/>
       <TextPill text="Ваши услуги"/>
       <Services/>
       <Neighbours/>
